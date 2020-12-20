@@ -1,5 +1,237 @@
 [
     {
+        "pool": {
+            "name": "fairhash.org",
+            "url": "https://fairhash.org/",
+            "fee": 1.0,
+            "type": "PROP"
+        }
+    },
+    {
+        "coin": "BCN",
+        "servers": [
+            {
+                "geo": "Hi-End Asic",
+                "urls": [
+                    "pool.bcn.fairhash.org:7777"
+                ]
+            },
+            {
+                "geo": "Low-End Asic",
+                "urls": [
+                    "pool.bcn.fairhash.org:5555"
+                ],
+                "ssl_urls": [
+                    "pool.bcn.fairhash.org:5556"
+                ]
+            },
+            {
+                "geo": "Asic port 80",
+                "urls": [
+                    "pool.bcn.fairhash.org:80"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "KRB",
+        "servers": [
+            {
+                "geo": "Hi-End Asic",
+                "urls": [
+                    "pool.krb.fairhash.org:7777"
+                ],
+                "ssl_urls": [
+                    "pool.krb.fairhash.org:7778"
+                ]
+            },
+            {
+                "geo": "Low-End Asic",
+                "urls": [
+                    "pool.krb.fairhash.org:5555"
+                ],
+                "ssl_urls": [
+                    "pool.krb.fairhash.org:5556"
+                ]
+            },
+            {
+                "geo": "Asic port 80",
+                "urls": [
+                    "pool.krb.fairhash.org:80"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "XMC",
+        "servers": [
+            {
+                "geo": "Hi-End Asic",
+                "urls": [
+                    "pool.xmc.fairhash.org:7777"
+                ]
+            },
+            {
+                "geo": "Low-End Asic",
+                "urls": [
+                    "pool.xmc.fairhash.org:5555"
+                ],
+                "ssl_urls": [
+                    "pool.xmc.fairhash.org:5556"
+                ]
+            },
+            {
+                "geo": "Asic port 80",
+                "urls": [
+                    "pool.xmc.fairhash.org:80"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "XNB",
+        "servers": [
+            {
+                "geo": "Hi-End Asic",
+                "urls": [
+                    "pool.xnb.fairhash.org:7777"
+                ]
+            },
+            {
+                "geo": "Low-End Asic",
+                "urls": [
+                    "pool.xnb.fairhash.org:5555"
+                ],
+                "ssl_urls": [
+                    "pool.xnb.fairhash.org:5556"
+                ]
+            },
+            {
+                "geo": "Asic port 80",
+                "urls": [
+                    "pool.xnb.fairhash.org:80"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "CROAT",
+        "servers": [
+            {
+                "geo": "Hi-End Asic",
+                "urls": [
+                    "pool.croat.fairhash.org:7777"
+                ]
+            },
+            {
+                "geo": "Low-End Asic",
+                "urls": [
+                    "pool.croat.fairhash.org:5555"
+                ],
+                "ssl_urls": [
+                    "pool.croat.fairhash.org:5556"
+                ]
+            },
+            {
+                "geo": "Asic port 80",
+                "urls": [
+                    "pool.croat.fairhash.org:80"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "QWC",
+        "servers": [
+            {
+                "geo": "Hi-End Asic",
+                "urls": [
+                    "pool.qwc.fairhash.org:7777"
+                ],
+                "ssl_urls": [
+                    "pool.qwc.fairhash.org:7778"
+                ]
+            },
+            {
+                "geo": "Low-End Asic",
+                "urls": [
+                    "pool.qwc.fairhash.org:5555"
+                ],
+                "ssl_urls": [
+                    "pool.qwc.fairhash.org:5556"
+                ]
+            },
+            {
+                "geo": "Asic port 80",
+                "urls": [
+                    "pool.qwc.fairhash.org:80"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "DMCH",
+        "servers": [
+            {
+                "geo": "Hi-End Asic",
+                "urls": [
+                    "pool.darma.fairhash.org:1888"
+                ],
+                "ssl_urls": [
+                    "pool.darma.fairhash.org:443"
+                ]
+            },
+            {
+                "geo": "Low-End Asic",
+                "urls": [
+                    "pool.darma.fairhash.org:1333"
+                ]
+            }
+        ],
+        "miners": {
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+    },
+    {
         "coin": "XMR",
         "servers": [
             {
@@ -159,75 +391,6 @@
                 "pass": "x",
                 "template": "%WAL%",
                 "user_config": "\"currency\": \"cryptonight_bittube2\""
-            }
-        }
-    },
-    {
-        "coin": "BCN",
-        "servers": [
-            {
-                "geo": "asic",
-                "urls": [
-                    "pool.bcn.fairhash.org:7777"
-                ]
-            },
-            {
-                "geo": "asic 80 port",
-                "urls": [
-                    "pool.bcn.fairhash.org:80"
-                ]
-            }
-        ],
-        "miners": {
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "KRB",
-        "servers": [
-            {
-                "geo": "asic",
-                "urls": [
-                    "pool.krb.fairhash.org:7777"
-                ]
-            },
-            {
-                "geo": "asic 80 port",
-                "urls": [
-                    "pool.krb.fairhash.org:80"
-                ]
-            }
-        ],
-        "miners": {
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "XMC",
-        "servers": [
-            {
-                "geo": "asic",
-                "urls": [
-                    "pool.xmc.fairhash.org:7777"
-                ]
-            },
-            {
-                "geo": "asic 80 port",
-                "urls": [
-                    "pool.xmc.fairhash.org:80"
-                ]
-            }
-        ],
-        "miners": {
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
