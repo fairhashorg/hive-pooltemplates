@@ -691,5 +691,46 @@
                 "algo": "cn_haven"
             }
         }
-    }
+    },
+    {
+        "coin":"RVN",
+        "servers":[
+            {
+                "geo": "Low-End",
+                "urls": [
+                    "pool.raven.fairhash.org:3333"
+                ],
+                "ssl_urls": [
+                    "pool.raven.fairhash.org:3334"
+                ]
+            },
+            {
+                "geo": "Mid range",
+                "urls": [
+                    "pool.raven.fairhash.org:5555"
+                ],
+                "ssl_urls": [
+                    "pool.raven.fairhash.org:5556"
+                ]
+            },
+            {
+                "geo": "High-End",
+                "urls": [
+                    "pool.raven.fairhash.org:7777"
+                ],
+                "ssl_urls": [
+                    "pool.raven.fairhash.org:7778"
+                ]
+            },
+            {
+                "geo": "Ultra High-End, Nicehash",
+                "urls": [
+                    "pool.raven.fairhash.org:8888"
+                ]
+            }
+        ],
+        "miners": {
+            "_prototype": "miners_kawpow"
+        }
+     }
 ]
