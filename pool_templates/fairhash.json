@@ -443,7 +443,7 @@
                     "pool.sumo.fairhash.org:4333"
                 ],
                 "ssl_urls": [
-                    "pool.lthn.fairhash.org:4334"
+                    "pool.sumo.fairhash.org:4334"
                 ]
             },
             {
@@ -523,52 +523,48 @@
             {
                 "geo": "Low-End",
                 "urls": [
-                    "pool.tube.fairhash.org:3333"
+                    "pool.tube.fairhash.org:1333"
+                ],
+                "ssl_urls": [
+                    "pool.tube.fairhash.org:1334"
                 ]
             },
             {
                 "geo": "Mid range",
                 "urls": [
-                    "pool.tube.fairhash.org:5555"
+                    "pool.tube.fairhash.org:2333"
+                ],
+                "ssl_urls": [
+                    "pool.tube.fairhash.org:2334"
                 ]
             },
             {
                 "geo": "High-End",
                 "urls": [
-                    "pool.tube.fairhash.org:7777"
+                    "pool.tube.fairhash.org:1888"
                 ]
             },
             {
-                "geo": "SSL Low-End",
+                "geo": "Ultra High-End, Nicehash",
                 "urls": [
-                    "pool.tube.fairhash.org:3334"
-                ]
-            },
-            {
-                "geo": "SSL Mid range",
-                "urls": [
-                    "pool.tube.fairhash.org:5556"
-                ]
-            },
-            {
-                "geo": "SSL High-End",
-                "urls": [
-                    "pool.tube.fairhash.org:7778"
+                    "pool.tube.fairhash.org:8888"
                 ]
             }
         ],
         "miners": {
-            "xmrig": {
-                "url": "%URL%",
-                "pass": "x",
+            "gminer": {
+                "algo": "cuckaroo29b",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
                 "template": "%WAL%",
-                "user_config": "\"algo\": \"cryptonight-heavy/tube\""
+                "pass": "%WORKER_NAME%"
             },
-            "xmr-stak": {
-                "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%",
-                "user_config": "\"currency\": \"cryptonight_bittube2\""
+            "lolminer": {
+                "algo": "CR29-40",
+                "server": "%URL_HOST%",
+                "port": "%URL_PORT%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%"
             }
         }
     },
@@ -576,22 +572,52 @@
         "coin": "DERO",
         "servers": [
             {
-                "geo": "asic",
+                "geo": "Low-End",
                 "urls": [
-                    "pool.dero.fairhash.org:7777"
+                    "pool.dero.fairhash.org:1333"
+                ],
+                "ssl_urls": [
+                    "pool.dero.fairhash.org:1334"
                 ]
             },
             {
-                "geo": "asic 80 port",
+                "geo": "Mid range",
                 "urls": [
-                    "pool.dero.fairhash.org:80"
+                    "pool.dero.fairhash.org:1555"
+                ],
+                "ssl_urls": [
+                    "pool.dero.fairhash.org:1556"
+                ]
+            },
+            {
+                "geo": "High-End",
+                "urls": [
+                    "pool.dero.fairhash.org:1777"
+                ],
+                "ssl_urls": [
+                    "pool.dero.fairhash.org:1778"
+                ]
+            },
+            {
+                "geo": "Ultra High-End, Nicehash",
+                "urls": [
+                    "pool.dero.fairhash.org:1888"
                 ]
             }
         ],
         "miners": {
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
+            "xmrig": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"astrobwt\""
+            },
+            "xmrig-new": {
+                "url": "%URL%",
+                "algo": "astrobwt",
+                "fork": "xmrig",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%"
             }
         }
     },
@@ -602,57 +628,67 @@
                 "geo": "Low-End",
                 "urls": [
                     "pool.xhv.fairhash.org:3333"
+                ],
+                "ssl_urls": [
+                    "pool.xhv.fairhash.org:3334"
                 ]
             },
             {
                 "geo": "Mid range",
                 "urls": [
                     "pool.xhv.fairhash.org:5555"
+                ],
+                "ssl_urls": [
+                    "pool.xhv.fairhash.org:5556"
                 ]
             },
             {
                 "geo": "High-End",
                 "urls": [
                     "pool.xhv.fairhash.org:7777"
+                ],
+                "ssl_urls": [
+                    "pool.xhv.fairhash.org:7778"
                 ]
             },
             {
-                "geo": "80 port",
+                "geo": "Ultra High-End, Nicehash",
+                "urls": [
+                    "pool.xhv.fairhash.org:8888"
+                ]
+            },
+            {
+                "geo": "port 80",
                 "urls": [
                     "pool.xhv.fairhash.org:80"
-                ]
-            },
-            {
-                "geo": "SSL Low-End",
-                "urls": [
-                    "pool.xhv.fairhash.org:3334"
-                ]
-            },
-            {
-                "geo": "SSL Mid range",
-                "urls": [
-                    "pool.xhv.fairhash.org:5556"
-                ]
-            },
-            {
-                "geo": "SSL High-End",
-                "urls": [
-                    "pool.xhv.fairhash.org:7778"
                 ]
             }
         ],
         "miners": {
-            "xmrig": {
+            "xmrig-new": {
                 "url": "%URL%",
-                "pass": "x",
-                "template": "%WAL%",
-                "user_config": "\"algo\": \"cryptonight/xhv\""
+                "algo": "cn-heavy/xhv",
+                "fork": "xmrig",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%"
             },
-            "xmr-stak": {
+            "srbminer": {
                 "url": "%URL%",
-                "pass": "x",
+                "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
-                "user_config": "\"currency\": \"haven\""
+                "algo": "cryptonight_xhv"
+            },
+            "cryptodredge": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "cryptonight-xhv"
+            },
+            "teamredminer": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "cn_haven"
             }
         }
     }
