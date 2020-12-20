@@ -344,18 +344,27 @@
                 "geo": "Low-End",
                 "urls": [
                     "pool.lthn.fairhash.org:3333"
+                ],
+                "ssl_urls": [
+                    "pool.lthn.fairhash.org:3334"
                 ]
             },
             {
                 "geo": "Mid range",
                 "urls": [
                     "pool.lthn.fairhash.org:5555"
+                ],
+                "ssl_urls": [
+                    "pool.lthn.fairhash.org:5556"
                 ]
             },
             {
                 "geo": "High-End",
                 "urls": [
                     "pool.lthn.fairhash.org:7777"
+                ],
+                "ssl_urls": [
+                    "pool.lthn.fairhash.org:7778"
                 ]
             },
             {
@@ -363,30 +372,134 @@
                 "urls": [
                     "pool.lthn.fairhash.org:3334"
                 ]
+            }
+        ],
+        "miners": {
+            "xmrig": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cn/r\""
             },
+            "xmrig-amd": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cn/r\""
+            },
+            "xmrig-nvidia": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cn/r\""
+            },
+            "xmrig-new": {
+                "url": "%URL%",
+                "algo": "cn/r",
+                "fork": "xmrig",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%"
+            },
+            "teamredminer": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "cnr"
+            },
+            "xmr-stak": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"currency\": \"cryptonight_r\""
+            },
+            "nanominer": {
+                "algo": "CryptoNightR",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "%WORKER_NAME%"
+            }
+        }
+    },
+    {
+        "coin": "SUMO",
+        "servers": [
             {
-                "geo": "SSL Mid range",
+                "geo": "Low-End",
                 "urls": [
-                    "pool.lthn.fairhash.org:5556"
+                    "pool.sumo.fairhash.org:4333"
+                ],
+                "ssl_urls": [
+                    "pool.lthn.fairhash.org:4334"
                 ]
             },
             {
-                "geo": "SSL High-End",
+                "geo": "Mid range",
                 "urls": [
-                    "pool.lthn.fairhash.org:7778"
+                    "pool.sumo.fairhash.org:6555"
+                ],
+                "ssl_urls": [
+                    "pool.sumo.fairhash.org:6556"
+                ]
+            },
+            {
+                "geo": "High-End",
+                "urls": [
+                    "pool.sumo.fairhash.org:8777"
+                ],
+                "ssl_urls": [
+                    "pool.sumo.fairhash.org:8778"
+                ]
+            },
+            {
+                "geo": "SSL Low-End",
+                "urls": [
+                    "pool.lthn.fairhash.org:3334"
                 ]
             }
         ],
         "miners": {
-            "claymore": {
-                "epools_tpl": "POOL: %URL%, WALLET: %WAL%, PSW: x",
-                "claymore_user_config": "-allpools -1"
+            "xmrig": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cn/r\""
             },
-            "ccminer": {
-                "ccurl": "stratum+tcp://%URL%",
-                "ccuser": "%WAL%",
-                "ccalgo": "cryptonightv7",
-                "ccpass": "x"
+            "xmrig-amd": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cn/r\""
+            },
+            "xmrig-nvidia": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"algo\": \"cn/r\""
+            },
+            "xmrig-new": {
+                "url": "%URL%",
+                "algo": "cn/r",
+                "fork": "xmrig",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%"
+            },
+            "teamredminer": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "cnr"
+            },
+            "xmr-stak": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "user_config": "\"currency\": \"cryptonight_r\""
+            },
+            "nanominer": {
+                "algo": "CryptoNightR",
+                "url": "%URL%",
+                "template": "%WAL%",
+                "pass": "%WORKER_NAME%"
             }
         }
     },
@@ -458,29 +571,6 @@
                 "geo": "asic 80 port",
                 "urls": [
                     "pool.dero.fairhash.org:80"
-                ]
-            }
-        ],
-        "miners": {
-            "asicminer": {
-                "url": "stratum+tcp://%URL%",
-                "template": "%WAL%.%WORKER_NAME%"
-            }
-        }
-    },
-    {
-        "coin": "SUMO",
-        "servers": [
-            {
-                "geo": "Antminer X3",
-                "urls": [
-                    "pool.sumo.fairhash.org:7777"
-                ]
-            },
-            {
-                "geo": "Baikal N, N+",
-                "urls": [
-                    "pool.sumo.fairhash.org:5555"
                 ]
             }
         ],
