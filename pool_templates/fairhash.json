@@ -284,56 +284,70 @@
     },
     {
         "coin": "XMR",
-        "servers": [
-            {
-                "geo": "Low-End",
-                "urls": [
-                    "pool.xmr.fairhash.org:3333"
-                ]
-            },
-            {
-                "geo": "Mid range",
-                "urls": [
-                    "pool.xmr.fairhash.org:5555"
-                ]
-            },
-            {
-                "geo": "High-End",
-                "urls": [
-                    "pool.xmr.fairhash.org:7777"
-                ]
-            },
-            {
-                "geo": "SSL Low-End",
-                "urls": [
-                    "pool.xmr.fairhash.org:3334"
-                ]
-            },
-            {
-                "geo": "SSL Mid range",
-                "urls": [
-                    "pool.xmr.fairhash.org:5556"
-                ]
-            },
-            {
-                "geo": "SSL High-End",
-                "urls": [
-                    "pool.xmr.fairhash.org:7778"
-                ]
-            }
-        ],
+            "servers": [
+                {
+                    "geo": "Low-End",
+                    "urls": [
+                        "pool.xmr.fairhash.org:3333"
+                    ],
+                    "ssl_urls": [
+                        "pool.xmr.fairhash.org:3334"
+                    ]
+                },
+                {
+                    "geo": "Mid range",
+                    "urls": [
+                        "pool.xmr.fairhash.org:5555"
+                    ],
+                    "ssl_urls": [
+                        "pool.xmr.fairhash.org:5556"
+                    ]
+                },
+                {
+                    "geo": "High-End",
+                    "urls": [
+                        "pool.xmr.fairhash.org:7777"
+                    ],
+                    "ssl_urls": [
+                        "pool.xmr.fairhash.org:7778"
+                    ]
+                },
+                {
+                    "geo": "Ultra High-End, Nicehash",
+                    "urls": [
+                        "pool.xmr.fairhash.org:8888"
+                    ]
+                }
+            ],
         "miners": {
             "xmrig": {
                 "url": "%URL%",
-                "pass": "x",
+                "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
-                "user_config": "\"algo\": \"cryptonight/2\""
+                "user_config": "\"algo\": \"rx/0\""
+            },
+            "xmrig-new": {
+                "cpu": "1",
+                "url": "%URL%",
+                "algo": "rx/0",
+                "fork": "xmrig",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%"
+            },
+            "srbminer": {
+                "url": "%URL%",
+                "pass": "%WORKER_NAME%",
+                "template": "%WAL%",
+                "algo": "randomx"
             },
             "xmr-stak": {
+                "amd": "\"gpu_threads_conf\" : [],\n\"platform_index\" : 0,",
+                "nvidia": "\"gpu_threads_conf\" : [],",
                 "url": "%URL%",
-                "pass": "x",
+                "fork": "randomx",
+                "pass": "%WORKER_NAME%",
                 "template": "%WAL%",
-                "user_config": "\"currency\": \"monero\""
+                "user_config": "\"currency\":\"monero\""
             }
         }
     },
@@ -368,9 +382,9 @@
                 ]
             },
             {
-                "geo": "SSL Low-End",
+                "geo": "Ultra High-End, Nicehash",
                 "urls": [
-                    "pool.lthn.fairhash.org:3334"
+                    "pool.lthn.fairhash.org:8888"
                 ]
             }
         ],
@@ -451,9 +465,9 @@
                 ]
             },
             {
-                "geo": "SSL Low-End",
+                "geo": "Ultra High-End, Nicehash",
                 "urls": [
-                    "pool.lthn.fairhash.org:3334"
+                    "pool.sumo.fairhash.org:8888"
                 ]
             }
         ],
