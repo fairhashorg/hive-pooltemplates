@@ -232,6 +232,57 @@
         }
     },
     {
+        "coin": "ZEN",
+        "servers": [
+            {
+                "geo": "Low-End",
+                "urls": [
+                    "zen.fairhash.org:3032"
+                ]
+            },
+            {
+                "geo": "Hi-End, Asics",
+                "urls": [
+                    "zen.fairhash.org:3033"
+                ]
+            }
+        ],
+        "miners": {
+            "claymore-z": {
+                "zpools_tpl": "POOL: %URL%, WALLET: %WAL%.%WORKER_NAME%"
+            },
+            "dstm": {
+                "pass": "x",
+                "port": "%URL_PORT%",
+                "server": "%URL_HOST%",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "ewbf": {
+                "zpass": "x",
+                "zport": "%URL_PORT%",
+                "zserver": "%URL_HOST%",
+                "ztemplate": "%WAL%.%WORKER_NAME%"
+            },
+            "bminer": {
+                "url": "stratum://%URL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "sgminer-gm": {
+                "url": "stratum+tcp://%URL%",
+                "algo": "equihash",
+                "fork": "gm",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
+            },
+            "asicminer": {
+                "url": "stratum+tcp://%URL%",
+                "template": "%WAL%.%WORKER_NAME%"
+            }
+        }
+
+    },
+    {
         "coin": "XMR",
         "servers": [
             {
@@ -287,42 +338,42 @@
         }
     },
     {
-        "coin": "ITNS",
+        "coin": "LTHN",
         "servers": [
             {
                 "geo": "Low-End",
                 "urls": [
-                    "pool.itns.fairhash.org:3333"
+                    "pool.lthn.fairhash.org:3333"
                 ]
             },
             {
                 "geo": "Mid range",
                 "urls": [
-                    "pool.itns.fairhash.org:5555"
+                    "pool.lthn.fairhash.org:5555"
                 ]
             },
             {
                 "geo": "High-End",
                 "urls": [
-                    "pool.itns.fairhash.org:7777"
+                    "pool.lthn.fairhash.org:7777"
                 ]
             },
             {
                 "geo": "SSL Low-End",
                 "urls": [
-                    "pool.itns.fairhash.org:3334"
+                    "pool.lthn.fairhash.org:3334"
                 ]
             },
             {
                 "geo": "SSL Mid range",
                 "urls": [
-                    "pool.itns.fairhash.org:5556"
+                    "pool.lthn.fairhash.org:5556"
                 ]
             },
             {
                 "geo": "SSL High-End",
                 "urls": [
-                    "pool.itns.fairhash.org:7778"
+                    "pool.lthn.fairhash.org:7778"
                 ]
             }
         ],
