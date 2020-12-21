@@ -698,34 +698,34 @@
             {
                 "geo": "Low-End",
                 "urls": [
-                    "pool.raven.fairhash.org:3333"
+                    "pool.rvn.fairhash.org:3333"
                 ],
                 "ssl_urls": [
-                    "pool.raven.fairhash.org:3334"
+                    "pool.rvn.fairhash.org:3334"
                 ]
             },
             {
                 "geo": "Mid range",
                 "urls": [
-                    "pool.raven.fairhash.org:5555"
+                    "pool.rvn.fairhash.org:5555"
                 ],
                 "ssl_urls": [
-                    "pool.raven.fairhash.org:5556"
+                    "pool.rvn.fairhash.org:5556"
                 ]
             },
             {
                 "geo": "High-End",
                 "urls": [
-                    "pool.raven.fairhash.org:7777"
+                    "pool.rvn.fairhash.org:7777"
                 ],
                 "ssl_urls": [
-                    "pool.raven.fairhash.org:7778"
+                    "pool.rvn.fairhash.org:7778"
                 ]
             },
             {
                 "geo": "Ultra High-End, Nicehash",
                 "urls": [
-                    "pool.raven.fairhash.org:8888"
+                    "pool.rvn.fairhash.org:8888"
                 ]
             }
         ],
