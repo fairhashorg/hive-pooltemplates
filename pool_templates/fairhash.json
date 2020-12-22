@@ -322,8 +322,8 @@
         "miners": {
             "xmrig": {
                 "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
                 "user_config": "\"algo\": \"rx/0\""
             },
             "xmrig-new": {
@@ -331,13 +331,13 @@
                 "url": "%URL%",
                 "algo": "rx/0",
                 "fork": "xmrig",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%"
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
             },
             "srbminer": {
                 "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
                 "algo": "randomx"
             },
             "xmr-stak": {
@@ -345,8 +345,8 @@
                 "nvidia": "\"gpu_threads_conf\" : [],",
                 "url": "%URL%",
                 "fork": "randomx",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
                 "user_config": "\"currency\":\"monero\""
             }
         }
@@ -391,46 +391,46 @@
         "miners": {
             "xmrig": {
                 "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
                 "user_config": "\"algo\": \"cn/r\""
             },
             "xmrig-amd": {
                 "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
                 "user_config": "\"algo\": \"cn/r\""
             },
             "xmrig-nvidia": {
                 "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
                 "user_config": "\"algo\": \"cn/r\""
             },
             "xmrig-new": {
                 "url": "%URL%",
                 "algo": "cn/r",
                 "fork": "xmrig",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%"
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
             },
             "teamredminer": {
                 "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
                 "algo": "cnr"
             },
             "xmr-stak": {
                 "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
                 "user_config": "\"currency\": \"cryptonight_r\""
             },
             "nanominer": {
                 "algo": "CryptoNightR",
                 "url": "%URL%",
-                "template": "%WAL%",
-                "pass": "%WORKER_NAME%"
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
             }
         }
     },
@@ -474,46 +474,46 @@
         "miners": {
             "xmrig": {
                 "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
                 "user_config": "\"algo\": \"cn/r\""
             },
             "xmrig-amd": {
                 "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
                 "user_config": "\"algo\": \"cn/r\""
             },
             "xmrig-nvidia": {
                 "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
                 "user_config": "\"algo\": \"cn/r\""
             },
             "xmrig-new": {
                 "url": "%URL%",
                 "algo": "cn/r",
                 "fork": "xmrig",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%"
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
             },
             "teamredminer": {
                 "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
                 "algo": "cnr"
             },
             "xmr-stak": {
                 "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
                 "user_config": "\"currency\": \"cryptonight_r\""
             },
             "nanominer": {
                 "algo": "CryptoNightR",
                 "url": "%URL%",
-                "template": "%WAL%",
-                "pass": "%WORKER_NAME%"
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
             }
         }
     },
@@ -556,15 +556,15 @@
                 "algo": "cuckaroo29b",
                 "server": "%URL_HOST%",
                 "port": "%URL_PORT%",
-                "template": "%WAL%",
-                "pass": "%WORKER_NAME%"
+                "template": "%WAL%.%WORKER_NAME%",
+                "pass": "x"
             },
             "lolminer": {
                 "algo": "CR29-40",
                 "server": "%URL_HOST%",
                 "port": "%URL_PORT%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%"
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -608,16 +608,16 @@
         "miners": {
             "xmrig": {
                 "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
                 "user_config": "\"algo\": \"astrobwt\""
             },
             "xmrig-new": {
                 "url": "%URL%",
                 "algo": "astrobwt",
                 "fork": "xmrig",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%"
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
             }
         }
     },
@@ -669,25 +669,25 @@
                 "url": "%URL%",
                 "algo": "cn-heavy/xhv",
                 "fork": "xmrig",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%"
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%"
             },
             "srbminer": {
                 "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
                 "algo": "cryptonight_xhv"
             },
             "cryptodredge": {
                 "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
                 "algo": "cryptonight-xhv"
             },
             "teamredminer": {
                 "url": "%URL%",
-                "pass": "%WORKER_NAME%",
-                "template": "%WAL%",
+                "pass": "x",
+                "template": "%WAL%.%WORKER_NAME%",
                 "algo": "cn_haven"
             }
         }
